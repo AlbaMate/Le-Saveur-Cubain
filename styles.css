@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300. .800;1 300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section{
+    margin-top: 50px;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 10px;
+    position: fixed;
+    top: 0 ;
+    left: 0;
+    right: 0;
+    background-color: rgb(147, 211, 238);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 10px;
+}
+
+
+.logo {
+    color: rgb(242, 79, 10);
+    font-size: 30 px;
+    font-weight: 800;
+    top: 3%;
+    display: block;
+    position: relative;
+    margin: 0px 5ox;
+    
+}
+.logo span {
+    color: rgb(20, 20, 127);
+}
+.menu {
+    display: flex;
+}
+.menu li {
+    margin: 0 15px;
+    list-style: none;
+}
+.menu li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(45, 47, 47);
+    position: relative;
+}
+.menu li a::before {
+    position: absolute ;
+   
+    top: -5px;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: rgb(20, 20, 127);
+    transition: 0.5s;
+    z-index: -1
+}
+.menu li a:hover::before {
+    width: 100%;
+
+}
+h1{  font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    border-radius: 80%;
+    transform: translate(20%, -7%);
+    margin: 80PX 200PX 250PX 40PX;
+    padding: 40px 10px;
+    position: relative; /* Ajout de cette propriété */
+    top: 3px;
+    display: inline;
+
+}
+p{ font-size: 20px;
+    margin-left: 300px;
+    margin-right: 180px;
+    padding: 40px;
+    
+} 
+    img {
+     width: 200px; /* Tamaño deseado para la imagen */
+     border-radius: 50%; /* Hace que los bordes sean redondeados */
+     height: 200px; /* Hauteur désirée pour l'image agrandie */
+     position: relative;
+     transform: translate(25%, 25%); /* Centre l'image verticalement */
+    
+}
+ body{
+    background-color: wheat;
+}
+.ma-div {
+    padding: 10px 20px; /* Espacement intérieur du bouton */
+    background-color: #007bff; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    border: none; /* Supprimer la bordure du bouton */
+    border-radius: 5px; /* Ajouter des coins arrondis au bouton */
+    cursor: pointer; /* Curseur de la souris change au survol */
+    transition: background-color 0.3s; /* Transition fluide pour les changements de 
+    couleur */
+    display: flex;
+}
+.ma-div :hover {
+    background-color: #f35a5a; /* Nouvelle couleur de fond au survol */
+}
+.footer{
+    background-color: rgb(147, 211, 238);
+}

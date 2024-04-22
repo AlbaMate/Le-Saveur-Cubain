@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos Platos</title>
+    <style>
+         h1{
+            @import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap'); 
+            font-size: xx-large;
+            font-family: Georgia, 'Times New Roman', Times, serif;   
+         }
+         img{
+           display: inline-flex; /* Asegura que las imágenes se presenten en línea */
+           width: 300px; /* Tamaño deseado para tus iconos */
+           height:auto; /* Mantiene la proporción de aspecto */
+           margin: 90px; /* Ajusta el margen entre los iconos según sea necesario */
+           border-radius: 50%;
+  
+        }
+        body{
+            background-color: rgb(221, 235, 240);
+        }
+        .boton-retour {
+            position: fixed; /* Fijar el botón en una posición específica */
+          top: 20px; /* Colocar el botón 20px desde la parte superior de la ventana */
+          right: 20px; /* Colocar el botón 20px desde el lado derecho de la ventana */
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #007bff; /* Color de fondo del botón */
+          color: #fff; /* Color del texto del botón */
+          text-decoration: none; /* Quitar subrayado del enlace */
+          border: none; /* Quitar borde del botón */
+          border-radius: 5px; /* Agregar esquinas redondeadas */
+          cursor: pointer; /* Cambiar cursor al pasar por encima */
+          transition: background-color 0.3s; /* Agregar transición suave */
+}
+
+.boton-retour:hover {
+    background-color: #0056b3; /* Cambiar color de fondo al pasar por encima */
+        
+}
+
+#popup-overlay {
+    display: none; /* Par défaut, le popup est caché */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    z-index: 1000; /* Assure que le popup est au-dessus de tout le reste */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style pour le contenu du popup */
+.popup-content {
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 60px;
+}
+
+/* Style pour le bouton de fermeture */
+.popup-exit {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Style pour le bouton d'ouverture du popup */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+
+    <h1>Laissez-vous séduire pour nos recettes</h1> 
+
+      <!-- Bouton pour ouvrir le popup -->
+      <button onclick="openPopup()"><a href="http://127.0.0.1:5500/Picadillo.html">  <img src="imagenes/Picadillo.jpg"heigth="180"alt="image 1">  </a></button>
+    
+      <!-- Contenu du popup -->
+      <div id="popup-overlay">
+          <div class="popup-content">
+              <span onclick="closePopup()" class="popup-exit">X</span>
+              <h2> 
+                <a href="http://127.0.0.1:5500/Picadillo.html"> </a>
+                
+              </h2>
+                
+          </div>
+      </div>
+
+      <script src="Preparation.js"></script>
+
+   
+
+    <div class="dishes">
+    <section id="dishe">
+        
+      <img src="imagenes/Picadillo.jpg"heigth="180"alt="image 1">  
+      <img src="imagenes/arroz-congri-500x500.jpg"heigth="180"alt="image 2">  
+      <img src="imagenes/Cuban-Ropa-Vieja-S2.jpg"heigth="180"alt="image 3"> 
+      <img src="imagenes/A0026-Cuisine-cubaine-05-cuba-autrement.jpg" alt="image 4">
+       
+  </section>
+</div>
+
+  <!--<a href="http://127.0.0.1:5500/index.html" class = button_2>about</a> -->
+  <a href="http://127.0.0.1:5500/index.html" class="boton-retour">Retour</a>
+
+  
+</body>
+</html>
