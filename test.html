@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .defilement {
+  height: 3000px;
+}
+
+.popup {
+  display: none;
+}
+
+.popup-encart {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba( 0, 0, 0, .25 )
+}
+.popup-contenu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 25px;
+  background: white;
+  transform: translate(-50%, -50%)
+}
+
+    </style>
+</head>
+<body>
+
+    <!--<a href="javascript:window.open('/Platos/Picadillo.html','Ma recette','width=300,height=200')"> -->
+       <img src="imagenes/Picadillo.jpg"heigth="180"alt="image 1">
+    <div class="affichage"></div>
+
+<div class="popup" id="Mypopup">
+  <div class="popup-encart"></div>
+  <div class="popup-contenu">Faites chauffer sur feu moyen 2 cuillères à soupe d’huile d’olive.
+    Ajoutez l’oignon, le poivron vert et l’ail dans l’huile chaude<br/><a href="imagenes/Picadillo.jpg" id="popup-fermeture">Fermer</a></div>
+</div>
+<script>
+   //Function  Afficher le pop-up
+    let (popupAlreadyShowed) = false  //indiquant que le popup n'a pas encore été affiché.
+
+window.addEventListener('scroll', function(e) {
+  if( ! popupAlreadyShowed ) {
+    setTimeout( () => {
+      document.getElementById('Mypopup').style.display = 'block'
+    }, 3000 )
+    popupAlreadyShowed = true
+  }
+})
+
+// Fermer le pop-up
+let popupAlreadyShowed = false
+
+window.addEventListener('scroll', function(e) {
+  if( ! popupAlreadyShowed ) {
+    setTimeout( () => {
+      document.getElementById('Mypopup').style.display = 'block'
+    }, 3000 )
+    popupAlreadyShowed = true
+  }
+})
+
+document.getElementById('popup-fermeture').addEventListener('click', function(e) {
+  document.getElementById('Mypopup').style.display = 'none'
+})
+
+
+</script>
+</body>
+</html>
