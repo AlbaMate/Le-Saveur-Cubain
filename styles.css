@@ -5,9 +5,7 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-section{
-    margin-top: 50px;
-}
+
 html{
     scroll-behavior: smooth;
     font-size: 62.5%;
@@ -71,19 +69,21 @@ header {
     width: 100%;
 
 }
-h1{  font-size: 60px;
+h1{  font-size: 35px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
     border-radius: 80%;
     transform: translate(20%, -7%);
     margin: 80PX 200PX 250PX 40PX;
     padding: 40px 10px;
-    position: relative; /* Ajout de cette propriété */
-    top: 3px;
-    display: inline;
+    position: absolute; 
+    top: 0px;
+    display: block;
+  
+    
 
 }
-p{ font-size: 20px;
+p{ font-size: 17px;
     margin-left: 300px;
     margin-right: 180px;
     padding: 40px;
@@ -98,9 +98,18 @@ p{ font-size: 20px;
     
 }
  body{
-    background-color: wheat;
+    background-color: white
 }
-.ma-div {
+ 
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300. .800;1 300..800&display=swap');
+    .ma-div{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+   
+        
     padding: 10px 20px; /* Espacement intérieur du bouton */
     background-color: #007bff; /* Couleur de fond du bouton */
     color: #fff; /* Couleur du texte du bouton */
@@ -114,6 +123,9 @@ p{ font-size: 20px;
 .ma-div :hover {
     background-color: #f35a5a; /* Nouvelle couleur de fond au survol */
 }
-.footer{
-    background-color: rgb(147, 211, 238);
+div.footer{
+    
+        padding: 10px ;
+        background: #a2d3f4;
+        color: rgb(51, 6, 174);
 }

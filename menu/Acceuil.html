@@ -3,15 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recettes</title>
     <style>
         body{
-            background-color: aquamarine;
+            background-color: white
         }
+     
+        html {
+  margin: 29px;/*Définit la marge de l'élément HTML à 0, supprimant tout espace autour de la page.*/
+  font-family: sans-serif;
+}
+
+ul {
+  padding: 0; /*Supprime le remplissage de la liste à puces, éliminant ainsi l'espace entre le bord de la liste et les éléments de la liste*/
+  width: 100%; /*Définit la largeur de la liste à puces à 100% de la largeur de son conteneur */
+}
+
+li {
+  display: inline; /*Définit l'affichage des éléments de liste comme "inline", les plaçant côte à côte horizontalement.*/
+}
+
+a { outline: none; 
+/*Supprime le contour autour des liens lorsqu'ils sont cliqués.*/
+text-decoration: none; 
+/*Supprime la décoration de texte par défaut des liens, tels que les soulignements.*/
+display: inline-block; 
+/*Définit l'affichage des liens comme "inline-block", leur permettant d'avoir une largeur et une hauteur spécifiques.*/
+width: 17.5%; 
+/*Définit la largeur des liens à 19.5% de la largeur de leur conteneur.*/
+margin-right: 0.900%; 
+/*Définit une marge de 0.625% à droite de chaque lien, créant ainsi un espacement entre les liens.*/
+text-align: center; 
+/*Centre le texte à l'intérieur des liens.*/
+line-height: 3; 
+/*Définit la hauteur de ligne des liens à 3, ce qui signifie que chaque ligne de texte occupe trois fois la hauteur de la police.*/
+color: black; 
+}
+
+li:last-child a {
+  margin-right: 0;
+}
+
+a:link,
+a:visited,
+a:focus {
+  background: rgb(120, 192, 244);
+  font-size: 16px;
+  padding: 9px 4px; 
+border-top-left-radius: 24%;
+font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+a:hover {
+  background: rgb(227, 250, 253);
+}
+
+a:active {
+  background: rgb(228, 236, 241);
+  color: rgb(225, 21, 21);
+}
+            
+    
     </style>
-</head>
+  
+</head> 
 <body>
-    
-    
+  <script src="API.js"></script>
+     <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 24px; color: #333;">Todas mis recetas</h1>
+  <div class="Deleite">
+   <!-- <h1>Recetas a base de </h1>   -->
+  <ul>
+    <li><a href="http://127.0.0.1:5501/menu/plats_viande.html">Viande</a></li>
+    <li><a href="http://127.0.0.1:5500/menu/plats_haricots.html">Haricots</a></li>
+    <li><a href="#">Riz</a></li>
+    <li><a href="#">Fruits de mer</a></li>
+  
+    <li><a href="API.html">Mes cocktails</a></li>
+  </ul>
+</div>
+
+  
+
 </body>
 </html>
