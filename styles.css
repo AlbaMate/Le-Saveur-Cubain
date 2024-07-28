@@ -25,20 +25,44 @@ header {
     z-index: 10px;
 }
 
+.search-bar {
+    width: 100%;
+    max-width: 250px;
+    
+  }
+  
+  .search-form {
+    display: flex;
+    width: 80%;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #007bff;
+  };
 
 .logo {
     color: rgb(242, 79, 10);
     font-size: 30 px;
     font-weight: 800;
     top: 3%;
-    display: block;
-    position: relative;
-    margin: 0px 5ox;
-    
+    display:flex;
+    position:absolute;
+  
+    margin-left: 10px;
 }
-.logo span {
-    color: rgb(20, 20, 127);
-}
+
+
 .menu {
     display: flex;
 }
@@ -84,7 +108,7 @@ h1{  font-size: 35px;
 
 }
 p{ font-size: 17px;
-    margin-left: 300px;
+    margin-left: 200px;
     margin-right: 180px;
     padding: 40px;
     
@@ -101,7 +125,6 @@ p{ font-size: 17px;
     background-color: white
 }
  
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300. .800;1 300..800&display=swap');
     .ma-div{
     margin: 0;
     padding: 0;
@@ -129,3 +152,4 @@ div.footer{
         background: #a2d3f4;
         color: rgb(51, 6, 174);
 }
+
