@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poulet</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            font-size: 62.5%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap; /* Permet de passer à la ligne suivante */
+            justify-content: space-between; /* Espace entre les images */
+            margin-top: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
+            
+        }
+     
+
+        .image-card {
+            width: 30%; /* Assure que chaque carte prend 30% de la largeur du conteneur */
+            background-color: white;
+            border: 3px solid #ccc;
+            border-radius: 3px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s; /* Animation lors du survol */
+            margin-bottom: 60px; /* Espace entre les cartes verticalement */
+            
+        }
+
+        .image-card:hover {
+            transform: translateY(-10px); /* Déplacement léger vers le haut au survol */
+        }
+
+        .image-card img {
+            width: 90%;
+            height: 250px; /* Fixe la hauteur de chaque image */
+            object-fit: contain; /* S'assurer que l'image couvre bien le conteneur */
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 5%;
+        }
+
+        .image-card h2 {
+            margin: 10px 15px;
+            font-size: 1.8rem; /* Taille du texte en rem pour un meilleur contrôle */
+            color: #333;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .image-card p {
+            margin: 0 15px 15px;
+            font-size: 1.4rem;
+            color: #666;
+            text-align: center;
+        }
+        h1{
+          text-align: center;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-size: 400%;
+         
+        }
+    </style>
+</head>
+<body>
+  <h1>Mes recettes de pollo</h1>
+    <div class="image-container">
+        <div class="image-card">
+            <img src="/imagenes/image2.jpg" alt="Poulet">
+            <h2>Pollo guisado</h2>
+            <p>Description de l'image 2.</p>
+        </div>
+        <div class="image-card">
+            <img src="/imagenes/image4.jpg" alt="Poulet">
+            <h2>Pollo al horno agridulce</h2>
+            <p>Description de l'image 4.</p>
+        </div>
+        <div class="image-card">
+            <img src="/imagenes/image1.jpg" alt="Poulet">
+            <h2>Pollo a la naranja</h2>
+            <p>Description de l'image 1.</p>
+        </div>
+        <div class="image-card">
+            <img src="/imagenes/image3.jpg" alt="Poulet">
+            <h2>Pollo agridulce encebollado</h2>
+            <p>Description de l'image 3.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -5,143 +5,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recettes</title>
     <style>
-        body{
-            background-color: white
+        body {
+            background-color: white;
+            margin: 29px;
+            font-family: sans-serif;
+            scroll-behavior: smooth;
         }
-     
-        html {
-          
-    scroll-behavior: smooth;
-    
-  margin: 29px;/*Définit la marge de l'élément HTML à 0, supprimant tout espace autour de la page.*/
-  font-family: sans-serif;
-}
 
-ul {
-  padding: 0; /*Supprime le remplissage de la liste à puces, éliminant ainsi l'espace entre le bord de la liste et les éléments de la liste*/
-  width: 100%; /*Définit la largeur de la liste à puces à 100% de la largeur de son conteneur */
-}
+        ul {
+            padding: 0;
+            width: 100%;
+        }
 
-li {
-  display: inline; /*Définit l'affichage des éléments de liste comme "inline", les plaçant côte à côte horizontalement.*/
-}
+        li {
+            display: inline-block;
+            position: relative;
+            margin-right: 10px;
+        }
 
-a { outline: none; 
-/*Supprime le contour autour des liens lorsqu'ils sont cliqués.*/
-text-decoration: none; 
-/*Supprime la décoration de texte par défaut des liens, tels que les soulignements.*/
-display: inline-block; 
-/*Définit l'affichage des liens comme "inline-block", leur permettant d'avoir une largeur et une hauteur spécifiques.*/
-width: 17.5%; 
-/*Définit la largeur des liens à 19.5% de la largeur de leur conteneur.*/
-margin-right: 0.900%; 
-/*Définit une marge de 0.625% à droite de chaque lien, créant ainsi un espacement entre les liens.*/
-text-align: center; 
-/*Centre le texte à l'intérieur des liens.*/
-line-height: 3; 
-/*Définit la hauteur de ligne des liens à 3, ce qui signifie que chaque ligne de texte occupe trois fois la hauteur de la police.*/
-color: black; 
-}
+        a {
+            outline: none;
+            text-decoration: none;
+            display: inline-block;
+            width: 180px;
+            text-align: center;
+            line-height: 3;
+            color: black;
+            padding: 9px 16px;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
 
-li:last-child a {
-  margin-right: 0;
-}
+        li:last-child a {
+            margin-right: 0;
+        }
 
-a:link,
-a:visited,
-a:focus {
-  background: rgb(120, 192, 244);
-  font-size: 16px;
-  padding: 9px 4px; 
-border-top-left-radius: 24%;
-font-family:Georgia, 'Times New Roman', Times, serif
-}
+        a:link,
+        a:visited,
+        a:focus {
+            background: rgb(120, 192, 244);
+            font-size: 16px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
 
-a:hover {
-  background: rgb(157, 224, 232);
-}
+        a:hover {
+            background: rgb(157, 224, 232);
+        }
 
-a:active {
-  background: rgb(148, 196, 226);
-  color: rgb(225, 21, 21);
-}
+        a:active {
+            background: rgb(234, 239, 242);
+            color: rgb(225, 21, 21);
+        }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            padding: 10px;
+        }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
+        .dropdown-content a {
+            color: black;
+            padding: 12px 5px;
+            text-decoration: none;
+            display: block;
+        }
 
-.dropdown-content a {
-    color: black;
-    padding: 16px 16px;
-    text-decoration: none;
-    display: block;
-}
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
 
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-.show {
-  display: block;
-}
-            
-    
+        .show {
+            display: block;
+        }
     </style>
-  
-</head> 
+</head>
 <body>
-  <script src="API.js"></script>
-     <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 24px; color: #333;">Todas mis recetas</h1>
-  <div class="Deleite">
-   <!-- <h1>Recetas a base de </h1>   -->
-  <ul>
-    <li class="dropdown"></li>
-      <a href="http://127.0.0.1:5501/menu/plats_viande.html" class="dropbtn"> </a>
-      <div class="dropdown-content">
-        <a href="#">Poulet 1</a>
-        <a href="#">Cochon 2</a>
-        <a href="#">Beuf 3</a>
+    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 24px; color: #333;">Toutes mes recettes</h1>
+    <br>
+    <div class="Deleite">
+        <ul>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Viande</a>
+                <div class="dropdown-content">
+                    <a href="http://127.0.0.1:5500/Toutes_mes_recettes/poulet.html">Poulet</a>
+                    <br>
+                    <a href="http://127.0.0.1:5500/Toutes_mes_recettes/porc.html">Porc</a>
+                    <br>
+                    <a href="http://127.0.0.1:5500/Toutes_mes_recettes/beuf.html">Bœuf</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Haricots</a>
+                <div class="dropdown-content">
+                    <a href="#">Potaje de frijoles negros</a>
+                    <br>
+                    <a href="#">Potaje de frijoles colorados</a>
+                    <br>
+                    <a href="#">Potaje de frijoles blancos</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Riz</a>
+                <div class="dropdown-content">
+                    <a href="#">Arroz blanco</a>
+                    <br>
+                    <a href="#">Moros y cristianos (arroz congris)</a>
+                    <br>
+                    <a href="#">Arroz con pollo</a>
+                    <br>
+                    <a href="#">Arroz con vegetales</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Fruits de mer</a>
+                <div class="dropdown-content">
+                    <a href="#">Camarones al ajillo</a>
+                    <br>
+                    <a href="#">Camarones rebosados</a>
+                    <br>
+                    <a href="#">Langosta</a>
+                    <br>
+                    <a href="#">Filet de pescado</a>
+                </div>
+            </li>
+            <li><a href="API.html">Mes cocktails</a></li>  
+
+        </ul>
     </div>
-    </li>
-    <li><a href="http://127.0.0.1:5500/menu/plats_haricots.html">Haricots</a></li>
-    <li><a href="#">Riz</a></li>
-    <li><a href="#">Fruits de mer</a></li>
-  
-    <li><a href="API.html">Mes cocktails</a></li>
-  </ul>
-</div>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const dropdown = document.querySelector('.dropbtn');
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdownBtns = document.querySelectorAll('.dropbtn');
 
-    dropdown.addEventListener('click', function(event) {
-        event.preventDefault(); // Empêche le lien de naviguer
-        const dropdownContent = this.nextElementSibling;
-        dropdownContent.classList.toggle('show');
-    });
+            dropdownBtns.forEach(function(btn) {
+                btn.addEventListener('click', function(event) {
+                    event.preventDefault(); // Empêche le lien de naviguer
+                    const dropdownContent = this.nextElementSibling;
+                    dropdownContent.classList.toggle('show');
+                });
+            });
 
-    window.addEventListener('click', function(event) {
-        if (!event.target.matches('.dropbtn')) {
-            const dropdowns = document.querySelectorAll('.dropdown-content');
-            dropdowns.forEach(function(dropdown) {
-                if (dropdown.classList.contains('show')) {
-                    dropdown.classList.remove('show');
+            window.addEventListener('click', function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    const dropdowns = document.querySelectorAll('.dropdown-content');
+                    dropdowns.forEach(function(dropdown) {
+                        if (dropdown.classList.contains('show')) {
+                            dropdown.classList.remove('show');
+                        }
+                    });
                 }
             });
-        }
-    });
-});
-
-</script>
+        });
+    </script>
 </body>
 </html>
