@@ -1,115 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-      <style>
-          body {
-              background-color: white
-          }
-  
-          .boton-retour {
-              position: fixed;
-              /* Fijar el botón en una posición específica */
-              top: 20px;
-              /* Colocar el botón 20px desde la parte superior de la ventana */
-              right: 20px;
-              /* Colocar el botón 20px desde el lado derecho de la ventana */
-              display: inline-block;
-              padding: 10px 20px;
-              background-color: #007bff;
-              /* Color de fondo del botón */
-              color: #fff;
-              /* Color del texto del botón */
-              text-decoration: none;
-              /* Quitar subrayado del enlace */
-              border: none;
-              /* Quitar borde del botón */
-              border-radius: 5px;
-              /* Agregar esquinas redondeadas */
-              cursor: pointer;
-              /* Cambiar cursor al pasar por encima */
-              transition: background-color 0.3s;
-              /* Agregar transición suave */
-          }
-  
-          .boton-retour:hover {
-              background-color: #0056b3;
-              /* Cambiar color de fondo al pasar por encima */
-          }
-  
-          /* Style pour le bouton d'ouverture du popup */
-          button {
-              padding: 10px 20px;
-              background-color: #007bff;
-              color: #fff;
-              border: none;
-              border-radius: 10px;
-              cursor: pointer;
-          }
-  
-          .affichage {
-              height: 2000px;
-          }
-  
-          .preparation-ingredients {
-              text-align: center;
-              /* Aligner le texte au centre */
-          }
-  
-          .preparation-ingredients h1 {
-              display: inline-block;
-              margin: 0 20px;
-              /* Ajouter une marge de 20px entre les titres */
-          }
-      </style>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail List</title>
+    <style>
+        body {
+            background-color: white;
+        }
 
-  <body>
+        .boton-retour {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .boton-retour:hover {
+            background-color: #0056b3;
+        }
+
+        .preparation-ingredients {
+            text-align: center;
+        }
+
+        .preparation-ingredients h1 {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        .cocktail {
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 450px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
     <div class="preparation-ingredients">
-      <h1>PREPARATION</h1>
-      <h1>INGREDIENTS</h1>
-  </div>
-
-  <a href="http://127.0.0.1:5501/menu/Acceuil.html" class="boton-retour">Retour</a>
-    <div style="overflow: auto; display: flex;">
-      <div id="cocktailList"></div>
-      <div style="margin-right: 250px; text-align: right; position: absolute; bottom: 400px; left: 850px; transform: translateX(-30%); text-align: center;" >
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, delectus dolorem non nesciunt optio magnam, explicabo beatae totam corrupti odio assumenda aut, officia corporis at incidunt amet consectetur nisi natus 
-        </p>
-      </div>
-      <a href="http://127.0.0.1:5501/menu/Acceuil.html" class="boton-retour">Retour</a>
+        <!-- <h1>PREPARATION</h1>
+        <h1>INGREDIENTS</h1> -->
     </div>
-  
-    <script>  
-      fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a`)
-        .then((response) => response.json())
-        .then((data) => {
-          data.drinks.forEach((cocktail) => {
-            const cocktailDiv = document.createElement("div");
-            cocktailDiv.classList.add("cocktail");
-            const image = document.createElement("img");
-            image.style.width = '450px';
-                image.style.height = 'auto';
-                image.src = cocktail.strDrinkThumb;
-                const heading = document.createElement("h2");
-                heading.textContent = cocktail.strDrink;
-                cocktailDiv.appendChild(image);
-                cocktailDiv.appendChild(heading);
-            /*cocktailDiv.innerHTML = `
-              <img src="${cocktail.strDrinkThumb}" />
-              <h2>${cocktail.strDrink}</h2> 
-            `;*/
-            document.getElementById("cocktailList").appendChild(cocktailDiv);
-          });
-        })
-        .catch((error) => {
-          console.error("Erreur lors de la récupération des données :", error);
-        });
 
-        
+    <a href="http://127.0.0.1:5501/menu/Acceuil.html" class="boton-retour">Retour</a>
+
+    <div id="cocktailList"></div>
+
+    <script>  
+        fetch(`http://localhost:6500/cocktails`)  // Utilisation de l'URL de l'API JSON 
+
+            .then((response) => response.json())
+            .then((data) => {
+                data.forEach((cocktail) => {
+                    const cocktailDiv = document.createElement("div");
+                    cocktailDiv.classList.add("cocktail");
+
+                    const image = document.createElement("img");
+                    image.src = cocktail.image;
+
+                    const heading = document.createElement("h2");
+                    heading.textContent = cocktail.name;
+
+                    const description = document.createElement("p");
+                    description.textContent = cocktail.description;
+
+                    const ingredients = document.createElement("p");
+                    ingredients.textContent = cocktail.ingredients;
+
+                    const preparation = document.createElement("p");
+                    preparation.textContent = "Préparation: " + cocktail.preparation;
+
+                    cocktailDiv.appendChild(image);
+                    cocktailDiv.appendChild(heading);
+                    cocktailDiv.appendChild(ingredients);
+                    cocktailDiv.appendChild(description);
+                    cocktailDiv.appendChild(preparation);
+
+                    document.getElementById("cocktailList").appendChild(cocktailDiv);
+                });
+            })
+            .catch((error) => {
+                console.error("Erreur lors de la récupération des données :", error);
+            });
     </script>
-   </body>
+</body>
 </html>

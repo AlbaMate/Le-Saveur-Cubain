@@ -10,7 +10,7 @@ fetch(apiDrinkUrl)
     if (!response.ok) {
       throw new Error("Erreur de réseau : " + response.status);
     }
-    // Convertit la réponse en JSON et la renvoie
+    // Convertir la réponse en JSON et la renvoie
     return response.json();
   })
   .then((data) => {
@@ -42,21 +42,3 @@ fetch(apiDrinkUrl)
   .catch((error) => {
     console.error("Erreur lors de la récupération des données :", error);
   });
-
-function canFreePrisoner(
-  knightIsAwake,
-  archerIsAwake,
-  prisonerIsAwake,
-  petDogIsPresent
-) {
-  if (
-    knightIsAwake === false &&
-    archerIsAwake === false &&
-    prisonerIsAwake === false &&
-    petDogIsPresent === false
-  ) {
-    return true;
-  } else {
-    return false;
-  }
-}

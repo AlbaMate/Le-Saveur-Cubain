@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recettes et plats traditionnels">
+    
+    <!-- Liens vers Pure CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    
+    <!-- Lien vers ton propre fichier CSS si nécessaire -->
+    <link rel="stylesheet" href="testMenuAccueil.css">
+
+    <title>Recettes</title>
+</head>
+<body>
+
+    <!-- Bannière en tête -->
+    <div class="banner">
+        <h1 class="banner-head">"L'essence de Cuba, servie à table"</h1>
+    </div>
+
+    <!-- Contenu de la page -->
+    <div class="l-content pure-g">
+        <div class="pure-u-1">
+            <!-- <h2>Plats Traditionnels</h2> -->
+            <h2>Toutes mes recettes</h2>
+        </div>
+        <!-- Autres contenus... -->
+    </div>
+
+
+
+
+    <nav class="navbar">
+        <div class="Deleite">
+            <ul>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Viande</a>
+                    <div class="dropdown-content">
+                        <a href="../PlatosCubains/Poulet.html">Poulet</a>
+                        <a href="../PlatosCubains/porc.html">Porc</a>
+                        <a href="http://127.0.0.1:5500/PlatosCubains/beuf.html">Bœuf</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Haricots</a>
+                    <div class="dropdown-content">
+                        <a href="#">Potaje de frijoles negros</a>
+                        <a href="#">Potaje de frijoles colorados</a>
+                        <a href="#">Potaje de frijoles blancos</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Riz</a>
+                    <div class="dropdown-content">
+                        <a href="#">Arroz blanco</a>
+                        <a href="#">Moros y cristianos (arroz congris)</a>
+                        <a href="#">Arroz con pollo</a>
+                        <a href="#">Arroz con vegetales</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Fruits de mer</a>
+                    <div class="dropdown-content">
+                        <a href="#">Camarones al ajillo</a>
+                        <a href="#">Camarones rebosados</a>
+                        <a href="#">Langosta</a>
+                        <a href="#">Filet de pescado</a>
+                    </div>
+                </li>
+                <li><a href="API.html">Mes cocktails</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const dropdownBtns = document.querySelectorAll('.dropbtn');
+
+    dropdownBtns.forEach(function(btn) {
+        btn.addEventListener('click', function(event) {
+            event.preventDefault();
+            const dropdownContent = this.nextElementSibling;
+
+            document.querySelectorAll('.dropdown-content').forEach(function(content) {
+                if (content !== dropdownContent) {
+                    content.classList.remove('show');
+                }
+            });
+
+            dropdownContent.classList.toggle('show');
+        });
+    });
+
+    window.addEventListener('click', function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            document.querySelectorAll('.dropdown-content').forEach(function(content) {
+                content.classList.remove('show');
+            });
+        }
+    });
+});
+
+    </script>
+    <br>
+
+ 
+    <h2>Plats Traditionnels</h2>
+    <div class="image-container">
+        <div>
+            <div class="card">
+                <img src="/imagenes/plat-traditinnel (1).jpg" alt="plat-traditipnnel">
+            </div>
+            <p class="description">Plat 1</p>
+        </div>
+        <div>
+            <div class="card">
+                <img src="/imagenes/plátanos-Maduros-white-plate-Sweet-Simple-Vegan-3-1.jpg" alt="plat-traditionnel">
+            </div>
+            <p class="description">Platanos maduros fritos</p>
+        </div>
+        <div>
+            <div class="card">
+                <img src="/imagenes/A0026-Cuisine-cubaine-05-cuba-autrement.jpg" alt="plat-traditionnel">
+            </div>
+            <p class="description">Buñuelos de malanga</p>
+        </div>
+        <div>
+            <div class="card">
+                <img src="/imagenes/Caldosa-Tunera.webp" alt="plat-traditionnel">
+            </div>
+            <p class="description">Caldosa cubana</p>
+        </div>
+        <div>
+            <div class="card">
+                <img src="/imagenes/Ropa-Vieja.jpg" alt="plat-traditionnel">
+            </div>
+            <p class="description">Arroz con picadillo</p>
+        </div>
+        <div>
+            <div class="card">
+                <img src="/imagenes/camarones-al-ajillo-2954-1.jpg" alt="plat-traditionnel">
+            </div>
+            <p class="description">Camarones al ajillo</p>
+        </div>
+    </div>
+    <div class="section-title">
+    <h2>Les TOP spécialités d’Amérique Latine</h2>
+</div>
+<div class="highlighted-paragraph">
+   <p> L’Amérique latine comporte plusieurs cultures que cela soit dans la manière de vivre que dans les assiettes. Cette région comprend l’une des plus vastes cuisines du monde en termes de nombre de spécialités et de par sa diversité.</p>
+</div>
+
+   
+   <div class="image-gallery">
+    <div class="gallery-item">
+        <a href="http://127.0.0.1:5500/PlatsAmeriqueLatine/Arepas.html" >
+            <div class="gallery">
+                <img src="/imagenes/gallery/Arepas_con_carneVénézuelien.webp" alt="Arepas con Carne" class="gallery-image">
+            </div>
+        </a>
+        <p class="description">Arepas con Carne</p>
+    </div>
+    
+
+    <div class="gallery-item">
+        <a href="http://127.0.0.1:5500/PlatsAmeriqueLatine/Ceviche.html" >
+        <div class="gallery">
+            <img src="/imagenes/gallery/CevichePeruvian.jpeg" alt="#" class="gallery-image">
+        </div>
+    </a>
+        <p class="description">Ceviche Peruvian</p>
+    </div>
+
+    <div class="gallery-item">
+        <div class="gallery">
+            <img src="/imagenes/gallery/patacones.jpg" alt="#" class="gallery-image">
+        </div>
+        <p class="description">Patacones</p>
+    </div>
+
+    <div class="gallery-item">
+        <div class="gallery">
+            <img src="/imagenes/gallery/Tortillas de maiz.jpg" alt="#" class="gallery-image">
+        </div>
+        <p class="description">Tortillas de maïs</p>
+    </div>
+
+    <div class="gallery-item">
+        <div class="gallery">
+            <img src="/imagenes/gallery/Tamales.jpg" alt="#" class="gallery-image">
+        </div>
+        <p class="description">Tamales</p>
+    </div>
+
+    <div class="gallery-item">
+        <div class="gallery">
+            <img src="/imagenes/gallery/PlatsTypiqueColombien.jpg" alt="#" class="gallery-image">
+        </div>
+        <p class="description">Plat traditionnel colombien</p>
+    </div>
+
+    <div class="gallery-item">
+        <div class="gallery">
+            <img src="/imagenes/gallery/i198064-EmpanadasDeQuesoColombien.jpg" alt="#" class="gallery-image">
+        </div>
+        <p class="description">Empanadas de queso</p>
+    </div>
+</div>
+
+</body>
+</html>
+
+</body>
+</html>

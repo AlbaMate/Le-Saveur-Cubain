@@ -43,18 +43,22 @@
         a:link,
         a:visited,
         a:focus {
-            background: rgb(120, 192, 244);
+            background: white;
             font-size: 16px;
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
 
         a:hover {
-            background: rgb(157, 224, 232);
+            background: white;
         }
 
         a:active {
             background: rgb(234, 239, 242);
             color: rgb(225, 21, 21);
+        }
+
+        div.Deleite{
+            text-align: center;
         }
 
         .dropdown-content {
@@ -81,9 +85,137 @@
         .show {
             display: block;
         }
+
+        h1 {
+            text-align: center;
+            font-size: 300%;
+        }
+
+        h2 { 
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 400%;
+            text-align: center;
+            margin-top: 10%;
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: row; /* Aligne les images horizontalement */
+            align-items: flex-start; /* Aligne les images en haut de chaque carte */
+            gap: 30px; /* Espace entre les cartes */
+            margin-top: 40px;
+            margin-left: 13%;
+            flex-wrap: wrap; /* Permet aux cartes de passer à la ligne si nécessaire */
+        }
+
+        .card {
+            width: 300px; /* Largeur fixe pour toutes les cartes */
+            border-radius: 8px; /* Coins arrondis pour les cartes */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour un effet de carte */
+            overflow: hidden; /* Masque les débordements */
+            background-color: white; /* Couleur de fond pour les cartes */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card img {
+            width: 100%; /* L'image prend toute la largeur de la carte */
+            height: 200px; /* Hauteur fixe pour l'image */
+            object-fit: cover; /* S'assure que l'image couvre bien son conteneur */
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Zoom avant */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée */
+        }
+
+        .description {
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 28px; /* Espace au-dessus de la description */
+            width: 300px; /* Même largeur que la carte */
+        }
+        .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.gallery-item {
+    text-align: center;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery {
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: transparent; /* Couleur de fond transparent */
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none; /* Pas d'ombre */
+}
+
+.gallery:hover {
+    transform: scale(1.05);
+    box-shadow: none; /* Pas d'ombre sur hover */
+}
+
+.gallery-image {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description {
+    margin-top: 30px; /* Ajuste la marge au-dessus du texte pour qu'il soit plus près de l'image */
+    font-size: 1.1em;
+    color: #333;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold; /* Rend le texte en gras */
+}
+
+.section-title {
+    text-align: center; /* Centre le texte */
+    margin: 20px 0; /* Ajoute de l'espace au-dessus et en dessous */
+    background-color: #f0f0f0; /* Fond de couleur légère */
+    padding: 15px; /* Ajoute de l'espace autour du texte */
+    border-radius: 8px; /* Coins arrondis */
+}
+
+.section-title h2 {
+    font-size: 2em; /* Taille de la police */
+    color: #333; /* Couleur du texte */
+    margin: 0; /* Supprime le marges par défaut du h2 */
+}
+.highlighted-paragraph {
+    position: relative;
+    width: 500%; /* Occupe toute la largeur de la page */
+    max-width: 800px; /* Ajuste la largeur maximale à ce que tu préfères */
+    margin: 35px auto; /* Centre le paragraphe horizontalement avec de l'espace en haut et en bas */
+    padding: 4px 8px; /* Ajoute de l'espace autour du texte */
+    background: none; /* Supprime tout fond coloré */
+}
+
+.highlighted-paragraph p {
+    font-size: 1.2em; /* Taille de police légèrement augmentée pour améliorer la lisibilité */
+    line-height: 1.6; /* Hauteur de ligne augmentée pour plus de confort de lecture */
+    color: #333; /* Couleur de texte pour un bon contraste */
+    margin: 0; /* Supprime les marges par défaut */
+    text-align: justify; /* Justification du texte pour un rendu propre */
+}
+
     </style>
 </head>
 <body>
+
     <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 24px; color: #333;">Toutes mes recettes</h1>
     <br>
     <div class="Deleite">
@@ -91,11 +223,11 @@
             <li class="dropdown">
                 <a href="#" class="dropbtn">Viande</a>
                 <div class="dropdown-content">
-                    <a href="http://127.0.0.1:5500/Toutes_mes_recettes/poulet.html">Poulet</a>
+                    <a href="../PlatosCubains/Poulet.html">Poulet</a>
                     <br>
-                    <a href="http://127.0.0.1:5500/Toutes_mes_recettes/porc.html">Porc</a>
+                    <a href="../PlatosCubains/porc.html">Porc</a>
                     <br>
-                    <a href="http://127.0.0.1:5500/Toutes_mes_recettes/beuf.html">Bœuf</a>
+                    <a href="http://127.0.0.1:5500/PlatosCubains/beuf.html">Bœuf</a>
                 </div>
             </li>
             <li class="dropdown">
@@ -133,7 +265,6 @@
                 </div>
             </li>
             <li><a href="API.html">Mes cocktails</a></li>  
-
         </ul>
     </div>
 
@@ -161,5 +292,110 @@
             });
         });
     </script>
+
+    <h2>Plats Traditionnels</h2>
+
+    <div class="image-container">
+        <div>
+            <div class="card">
+                <img src="/imagenes/plat-traditinnel (1).jpg" alt="plat-traditipnnel">
+            </div>
+            <p class="description">Plat 1</p>
+        </div>
+        <div>
+            <div class="card">
+                <img src="/imagenes/plátanos-Maduros-white-plate-Sweet-Simple-Vegan-3-1.jpg" alt="plat-traditionnel">
+            </div>
+            <p class="description">Platanos maduros fritos</p>
+        </div>
+        <div>
+            <div class="card">
+                <img src="/imagenes/A0026-Cuisine-cubaine-05-cuba-autrement.jpg" alt="plat-traditionnel">
+            </div>
+            <p class="description">Buñuelos de malanga</p>
+        </div>
+        <div>
+            <div class="card">
+                <img src="/imagenes/Caldosa-Tunera.webp" alt="plat-traditionnel">
+            </div>
+            <p class="description">Caldosa cubana</p>
+        </div>
+        <div>
+            <div class="card">
+                <img src="/imagenes/Ropa-Vieja.jpg" alt="plat-traditionnel">
+            </div>
+            <p class="description">Arroz con picadillo</p>
+        </div>
+        <div>
+            <div class="card">
+                <img src="/imagenes/camarones-al-ajillo-2954-1.jpg" alt="plat-traditionnel">
+            </div>
+            <p class="description">Camarones al ajillo</p>
+        </div>
+    </div>
+    <div class="section-title">
+    <h2>Les TOP spécialités d’Amérique Latine</h2>
+</div>
+<div class="highlighted-paragraph">
+   <p> L’Amérique latine comporte plusieurs cultures que cela soit dans la manière de vivre que dans les assiettes. Cette région comprend l’une des plus vastes cuisines du monde en termes de nombre de spécialités et de par sa diversité.</p>
+</div>
+
+   
+   <div class="image-gallery">
+    <div class="gallery-item">
+        <a href="http://127.0.0.1:5500/PlatsAmeriqueLatine/Arepas.html" >
+            <div class="gallery">
+                <img src="/imagenes/gallery/Arepas_con_carneVénézuelien.webp" alt="Arepas con Carne" class="gallery-image">
+            </div>
+        </a>
+        <p class="description">Arepas con Carne</p>
+    </div>
+    
+
+    <div class="gallery-item">
+        <a href="http://127.0.0.1:5500/PlatsAmeriqueLatine/Ceviche.html" >
+        <div class="gallery">
+            <img src="/imagenes/gallery/CevichePeruvian.jpeg" alt="#" class="gallery-image">
+        </div>
+    </a>
+        <p class="description">Ceviche Peruvian</p>
+    </div>
+
+    <div class="gallery-item">
+        <div class="gallery">
+            <img src="/imagenes/gallery/patacones.jpg" alt="#" class="gallery-image">
+        </div>
+        <p class="description">Patacones</p>
+    </div>
+
+    <div class="gallery-item">
+        <div class="gallery">
+            <img src="/imagenes/gallery/Tortillas de maiz.jpg" alt="#" class="gallery-image">
+        </div>
+        <p class="description">Tortillas de maïs</p>
+    </div>
+
+    <div class="gallery-item">
+        <div class="gallery">
+            <img src="/imagenes/gallery/Tamales.jpg" alt="#" class="gallery-image">
+        </div>
+        <p class="description">Tamales</p>
+    </div>
+
+    <div class="gallery-item">
+        <div class="gallery">
+            <img src="/imagenes/gallery/PlatsTypiqueColombien.jpg" alt="#" class="gallery-image">
+        </div>
+        <p class="description">Plat traditionnel colombien</p>
+    </div>
+
+    <div class="gallery-item">
+        <div class="gallery">
+            <img src="/imagenes/gallery/i198064-EmpanadasDeQuesoColombien.jpg" alt="#" class="gallery-image">
+        </div>
+        <p class="description">Empanadas de queso</p>
+    </div>
+</div>
+
 </body>
 </html>
