@@ -1,16 +1,1044 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nutrition - Cuisine Cubaine</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
     <style>
-        body{
-            background-color: white;
-        }
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #28a745;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Grid layout for the ingredient cards */
+.nutrition-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Nutrition card style */
+.nutrition-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.nutrition-card h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.nutrition-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.nutrition-card p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.nutrition-card h3 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #28a745;
+}
+
+.nutrition-card ul {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.nutrition-card ul li {
+    margin-bottom: 5px;
+}
+
+.nutrition-card table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+.nutrition-card table th,
+.nutrition-card table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.nutrition-card table th {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.nutrition-card table td {
+    background-color: #f9f9f9;
+}
     </style>
 </head>
 <body>
-    
+
+    <!-- Header Section -->
+    <header>
+        <h1>Nutrition et Bienfaits des Ingrédients</h1>
+        <p>Découvrez les bienfaits nutritionnels des ingrédients utilisés dans la cuisine cubaine.</p>
+    </header>
+
+    <!-- Section des ingrédients -->
+    <section class="nutrition-grid">
+        <!-- Fiche Ingrédient 1 : Avocat -->
+        <div class="nutrition-card">
+            <h2>Avocat</h2>
+            <img src="/Le Saveur Cubain/imagenes/imageNutrition/avocat.jpeg" alt="Avocat">
+            <p>L'avocat est riche en graisses saines, en particulier des acides gras monoinsaturés, qui aident à réduire le cholestérol LDL (mauvais cholestérol) et à promouvoir la santé cardiaque. Il contient également des vitamines E, C, K et des vitamines du groupe B, ainsi que des minéraux tels que le potassium. Les fibres présentes dans l'avocat favorisent la digestion et aident à maintenir une sensation de satiété.</p>
+            <h3>Bienfaits pour la santé :</h3>
+            <ul>
+                <li>Riche en graisses saines, aide à réduire le cholestérol</li>
+                <li>Source de potassium, contribue à la régulation de la pression artérielle</li>
+                <li>Contient des antioxydants, protège les cellules des dommages</li>
+                <li>Excellente source de fibres, favorise la digestion</li>
+                <li>Aide à maintenir une sensation de satiété</li>
+            </ul>
+            <h3>Valeur Nutritionnelle (100g) :</h3>
+            <table>
+                <tr>
+                    <th>Calories</th>
+                    <td>160 kcal</td>
+                </tr>
+                <tr>
+                    <th>Protéines</th>
+                    <td>2 g</td>
+                </tr>
+                <tr>
+                    <th>Fibres</th>
+                    <td>7 g</td>
+                </tr>
+                <tr>
+                    <th>Glucides</th>
+                    <td>9 g</td>
+                </tr>
+                <tr>
+                    <th>Potassium</th>
+                    <td>485 mg</td>
+                </tr>
+                <tr>
+                    <th>Vitamine E</th>
+                    <td>2.07 mg</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- Fiche Ingrédient 2 : Haricots Noirs -->
+        <div class="nutrition-card">
+            <h2>Haricots Noirs</h2>
+            <img src="/Le Saveur Cubain/imagenes/imageNutrition/haricotsNoirs.avif" alt="Haricots Noirs">
+            <p>Les haricots noirs sont une excellente source de protéines végétales et de fibres, parfaits pour une alimentation équilibrée. Ils sont également riches en antioxydants, en particulier les flavonoïdes, qui contribuent à la santé cardiaque et à la régulation du sucre dans le sang. De plus, les haricots noirs sont une bonne source de vitamines du groupe B, en particulier la vitamine B9 (acide folique), essentielle pour la santé cellulaire.</p>
+            <h3>Bienfaits pour la santé :</h3>
+            <ul>
+                <li>Riches en fibres alimentaires, favorisent la digestion</li>
+                <li>Source de protéines végétales, idéal pour les régimes végétariens</li>
+                <li>Faibles en gras, bénéfiques pour la santé cardiaque</li>
+                <li>Contiennent des antioxydants, protègent contre les maladies chroniques</li>
+                <li>Bonne source d'acide folique, important pour la santé cellulaire</li>
+            </ul>
+            <h3>Valeur Nutritionnelle (100g) :</h3>
+            <table>
+                <tr>
+                    <th>Calories</th>
+                    <td>132 kcal</td>
+                </tr>
+                <tr>
+                    <th>Protéines</th>
+                    <td>9 g</td>
+                </tr>
+                <tr>
+                    <th>Fibres</th>
+                    <td>6 g</td>
+                </tr>
+                <tr>
+                    <th>Glucides</th>
+                    <td>23 g</td>
+                </tr>
+                <tr>
+                    <th>Acide folique</th>
+                    <td>130 µg</td>
+                </tr>
+                <tr>
+                    <th>Flavonoïdes</th>
+                    <td>Varie selon la variété</td>
+                </tr>
+            </table>
+        </div>
+        
+
+        <div class="nutrition-card">
+            <h2>Oignon</h2>
+            <img src="/Le Saveur Cubain/imagenes/imageNutrition/oignon-culture.jpg" alt="Oignon">
+            <p>L'oignon est une source riche en antioxydants, notamment la quercétine, qui a des propriétés anti-inflammatoires et aide à protéger contre les maladies chroniques. Il contient des vitamines C et B6, essentielles pour le métabolisme et la production d'énergie. L'oignon est également bénéfique pour la santé cardiaque en abaissant le cholestérol, en réduisant l'inflammation et en améliorant la circulation sanguine.</p>
+            <h3>Bienfaits pour la santé :</h3>
+            <ul>
+                <li>Riche en quercétine, un puissant antioxydant</li>
+                <li>Aide à réduire l'inflammation</li>
+                <li>Améliore la santé cardiaque en abaissant le cholestérol</li>
+                <li>Source de vitamines C et B6, soutient le métabolisme</li>
+                <li>Favorise une meilleure circulation sanguine</li>
+            </ul>
+            <h3>Valeur Nutritionnelle (100g) :</h3>
+            <table>
+                <tr>
+                    <th>Calories</th>
+                    <td>40 kcal</td>
+                </tr>
+                <tr>
+                    <th>Protéines</th>
+                    <td>1.1 g</td>
+                </tr>
+                <tr>
+                    <th>Fibres</th>
+                    <td>1.7 g</td>
+                </tr>
+                <tr>
+                    <th>Glucides</th>
+                    <td>9 g</td>
+                </tr>
+                <tr>
+                    <th>Vitamine C</th>
+                    <td>7.4 mg</td>
+                </tr>
+                <tr>
+                    <th>Vitamine B6</th>
+                    <td>0.12 mg</td>
+                </tr>
+            </table>
+        </div>
+        
+
+        <div class="nutrition-card">
+            <h2>Orange</h2>
+            <img src="/Le Saveur Cubain/imagenes/imageNutrition/orange.jpeg" alt="Orange">
+            <p>L'orange est un fruit riche en vitamine C, essentielle pour renforcer le système immunitaire et favoriser la santé de la peau. Elle contient également des fibres, du potassium, ainsi que des antioxydants qui protègent les cellules contre les dommages. L'orange contribue à l'hydratation, à la santé cardiaque et aide à réguler la pression artérielle grâce à sa teneur en potassium. Elle est aussi excellente pour la digestion.</p>
+            <h3>Bienfaits pour la santé :</h3>
+            <ul>
+                <li>Riche en vitamine C, booste le système immunitaire</li>
+                <li>Contient des antioxydants, protège contre les dommages cellulaires</li>
+                <li>Aide à réguler la pression artérielle grâce au potassium</li>
+                <li>Bonne source de fibres, favorise la digestion</li>
+                <li>Hydrate et revitalise</li>
+            </ul>
+            <h3>Valeur Nutritionnelle (100g) :</h3>
+            <table>
+                <tr>
+                    <th>Calories</th>
+                    <td>47 kcal</td>
+                </tr>
+                <tr>
+                    <th>Protéines</th>
+                    <td>0.9 g</td>
+                </tr>
+                <tr>
+                    <th>Fibres</th>
+                    <td>2.4 g</td>
+                </tr>
+                <tr>
+                    <th>Glucides</th>
+                    <td>12 g</td>
+                </tr>
+                <tr>
+                    <th>Vitamine C</th>
+                    <td>53 mg</td>
+                </tr>
+                <tr>
+                    <th>Potassium</th>
+                    <td>181 mg</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="nutrition-card">
+            <h2>Coriandre</h2>
+            <img src="/Le Saveur Cubain/imagenes/imageNutrition/cilantro-and-culantro-on-a-plate.webp" alt="Coriandre">
+            <p>
+                La coriandre est une herbe aromatique riche en antioxydants, notamment la vitamine C, K et A. Elle joue un rôle important dans l'amélioration de la digestion en stimulant la production de sucs digestifs et en soulageant les troubles gastro-intestinaux. En plus de ses propriétés détoxifiantes, elle est connue pour ses effets anti-inflammatoires. La coriandre est également réputée pour abaisser le taux de sucre dans le sang, ce qui en fait un allié précieux pour les personnes diabétiques. De plus, elle contribue à la santé cardiaque en réduisant le cholestérol LDL et en améliorant la circulation sanguine. 
+            </p>
+            
+            <h3>Bienfaits pour la santé :</h3>
+            <ul>
+                <li>Riche en antioxydants (vitamines A, C et K)</li>
+                <li>Aide à la digestion et détoxifie le corps</li>
+                <li>Propriétés anti-inflammatoires</li>
+                <li>Peut abaisser le taux de sucre dans le sang</li>
+                <li>Favorise la santé cardiaque en réduisant le cholestérol LDL</li>
+            </ul>
+            <h3>Valeur Nutritionnelle (100g) :</h3>
+            <table>
+                <tr>
+                    <th>Calories</th>
+                    <td>23 kcal</td>
+                </tr>
+                <tr>
+                    <th>Protéines</th>
+                    <td>2.1 g</td>
+                </tr>
+                <tr>
+                    <th>Fibres</th>
+                    <td>2.8 g</td>
+                </tr>
+                <tr>
+                    <th>Glucides</th>
+                    <td>3.7 g</td>
+                </tr>
+                <tr>
+                    <th>Vitamine C</th>
+                    <td>27 mg</td>
+                </tr>
+                <tr>
+                    <th>Vitamine K</th>
+                    <td>310 µg</td>
+                </tr>
+            </table>
+        </div>
+
+
+       
+
+        
+        <div class="nutrition-card">
+    <h2>Ail</h2>
+    <img src="/Le Saveur Cubain/imagenes/imageNutrition/ail.jpg" alt="Ail">
+    <p>L'ail est un puissant ingrédient aux nombreuses propriétés bénéfiques pour la santé. Il est riche en composés soufrés, notamment l'allicine, qui possède des propriétés antibactériennes, antivirales et antifongiques. L'ail contribue également à réduire la pression artérielle et à améliorer la santé cardiaque en diminuant le taux de cholestérol LDL. En plus de renforcer le système immunitaire, il aide à la digestion en stimulant la production de sucs gastriques.</p>
+    <h3>Bienfaits pour la santé :</h3>
+    <ul>
+        <li>Riche en allicine, favorise la santé cardiaque</li>
+        <li>Propriétés antibactériennes et antivirales</li>
+        <li>Améliore la digestion et la flore intestinale</li>
+        <li>Peut réduire la pression artérielle</li>
+        <li>Renforce le système immunitaire</li>
+    </ul>
+    <h3>Valeur Nutritionnelle (100g) :</h3>
+    <table>
+        <tr>
+            <th>Calories</th>
+            <td>149 kcal</td>
+        </tr>
+        <tr>
+            <th>Protéines</th>
+            <td>6,4 g</td>
+        </tr>
+        <tr>
+            <th>Fibres</th>
+            <td>2,1 g</td>
+        </tr>
+        <tr>
+            <th>Glucides</th>
+            <td>33 g</td>
+        </tr>
+        <tr>
+            <th>Vitamine C</th>
+            <td>31,2 mg</td>
+        </tr>
+        <tr>
+            <th>Calcium</th>
+            <td>181 mg</td>
+        </tr>
+    </table>
+</div>
+
+
+<div class="nutrition-card">
+    <h2>Citron</h2>
+    <img src="/Le Saveur Cubain/imagenes/imageNutrition/citron.jpg" alt="Citron">
+    <p>Le citron est un fruit agrume riche en vitamine C, qui renforce le système immunitaire et aide à lutter contre les infections. Il est également un puissant antioxydant, aidant à protéger les cellules du corps contre le stress oxydatif. De plus, le citron possède des propriétés détoxifiantes et aide à améliorer la digestion tout en équilibrant le pH du corps. Son jus est souvent utilisé pour rehausser les saveurs dans les plats et les boissons.</p>
+    <h3>Bienfaits pour la santé :</h3>
+    <ul>
+        <li>Riche en vitamine C, renforce le système immunitaire</li>
+        <li>Propriétés détoxifiantes, favorise l'élimination des toxines</li>
+        <li>Améliore la digestion et équilibre le pH du corps</li>
+        <li>Antioxydant, protège les cellules contre le stress oxydatif</li>
+        <li>Bienfaits pour la peau, aide à réduire les imperfections</li>
+    </ul>
+    <h3>Valeur Nutritionnelle (100g) :</h3>
+    <table>
+        <tr>
+            <th>Calories</th>
+            <td>29 kcal</td>
+        </tr>
+        <tr>
+            <th>Protéines</th>
+            <td>1,1 g</td>
+        </tr>
+        <tr>
+            <th>Fibres</th>
+            <td>2,8 g</td>
+        </tr>
+        <tr>
+            <th>Glucides</th>
+            <td>9,3 g</td>
+        </tr>
+        <tr>
+            <th>Vitamine C</th>
+            <td>53 mg</td>
+        </tr>
+        <tr>
+            <th>Potassium</th>
+            <td>138 mg</td>
+        </tr>
+    </table>
+</div>
+
+        
+        <div class="nutrition-card">
+            <h2>Potiron</h2>
+            <img src="/Le Saveur Cubain/imagenes/imageNutrition/calabaza-kkuC--1248x698@abc.jpg" alt="Potiron">
+            <p>Le potiron est une excellente source de bêta-carotène, transformé en vitamine A dans l'organisme, bénéfique pour la vision et la santé de la peau. Il est également riche en vitamine C, E et potassium. Le potiron est faible en calories, ce qui en fait un aliment idéal pour la perte de poids, tout en étant riche en fibres pour soutenir la digestion. De plus, il renforce le système immunitaire et aide à réduire les risques de maladies cardiaques.</p>
+            <h3>Bienfaits pour la santé :</h3>
+            <ul>
+                <li>Riche en bêta-carotène (vitamine A) pour la vision et la peau</li>
+                <li>Source de vitamines C et E, et de potassium</li>
+                <li>Faible en calories, idéal pour la gestion du poids</li>
+                <li>Riche en fibres, bon pour la digestion</li>
+                <li>Renforce le système immunitaire et réduit les risques cardiaques</li>
+            </ul>
+            <h3>Valeur Nutritionnelle (100g) :</h3>
+            <table>
+                <tr>
+                    <th>Calories</th>
+                    <td>26 kcal</td>
+                </tr>
+                <tr>
+                    <th>Protéines</th>
+                    <td>1 g</td>
+                </tr>
+                <tr>
+                    <th>Fibres</th>
+                    <td>0.5 g</td>
+                </tr>
+                <tr>
+                    <th>Glucides</th>
+                    <td>6.5 g</td>
+                </tr>
+                <tr>
+                    <th>Vitamine A</th>
+                    <td>8513 IU</td>
+                </tr>
+                <tr>
+                    <th>Vitamine C</th>
+                    <td>9 mg</td>
+                </tr>
+                <tr>
+                    <th>Potassium</th>
+                    <td>340 mg</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="nutrition-card">
+            <h2>Concombre</h2>
+            <img src="/Le Saveur Cubain/imagenes/imageNutrition/concombre.webp" alt="Concombre">
+            <p>Le concombre est un légume très hydratant, composé principalement d'eau (environ 95%). Il est faible en calories mais riche en nutriments essentiels, notamment en vitamine K, qui est cruciale pour la santé des os et la coagulation du sang. Le concombre contient également des antioxydants qui aident à réduire les inflammations et à prévenir les dommages oxydatifs dans le corps. Sa haute teneur en fibres et en eau en fait un excellent aliment pour améliorer la digestion et favoriser une bonne hydratation.</p>
+            <h3>Bienfaits pour la santé :</h3>
+            <ul>
+                <li>Très hydratant grâce à sa haute teneur en eau</li>
+                <li>Riche en vitamine K, bon pour la santé des os</li>
+                <li>Contient des antioxydants, aide à réduire l'inflammation</li>
+                <li>Faible en calories, idéal pour une alimentation légère</li>
+                <li>Favorise une bonne digestion grâce aux fibres</li>
+            </ul>
+            <h3>Valeur Nutritionnelle (100g) :</h3>
+            <table>
+                <tr>
+                    <th>Calories</th>
+                    <td>16 kcal</td>
+                </tr>
+                <tr>
+                    <th>Protéines</th>
+                    <td>0,7 g</td>
+                </tr>
+                <tr>
+                    <th>Fibres</th>
+                    <td>0,5 g</td>
+                </tr>
+                <tr>
+                    <th>Glucides</th>
+                    <td>3,6 g</td>
+                </tr>
+                <tr>
+                    <th>Vitamine K</th>
+                    <td>16,4 µg</td>
+                </tr>
+                <tr>
+                    <th>Potassium</th>
+                    <td>147 mg</td>
+                </tr>
+            </table>
+        </div>
+
+        
+        <div class="nutrition-card">
+            <h2>Haricots Blancs</h2>
+            <img src="/Le Saveur Cubain/imagenes/imageNutrition/haricotsBloncs.jpg" alt="Haricots Blancs">
+            <p>Les haricots blancs sont une excellente source de protéines végétales et de fibres alimentaires, essentiels pour une digestion saine et une sensation de satiété durable. Ils sont également riches en minéraux comme le magnésium et le fer, qui sont importants pour la santé des os et la production d'énergie. En plus d'aider à réguler le taux de sucre dans le sang, les haricots blancs contiennent des antioxydants qui soutiennent le système immunitaire et réduisent le risque de maladies chroniques.</p>
+            <h3>Bienfaits pour la santé :</h3>
+            <ul>
+                <li>Riche en fibres, favorise la digestion et la satiété</li>
+                <li>Bonne source de protéines végétales</li>
+                <li>Contient du magnésium et du fer, essentiels pour la santé osseuse et énergétique</li>
+                <li>Aide à réguler le taux de sucre dans le sang</li>
+                <li>Antioxydants qui soutiennent le système immunitaire</li>
+            </ul>
+            <h3>Valeur Nutritionnelle (100g) :</h3>
+            <table>
+                <tr>
+                    <th>Calories</th>
+                    <td>139 kcal</td>
+                </tr>
+                <tr>
+                    <th>Protéines</th>
+                    <td>9,7 g</td>
+                </tr>
+                <tr>
+                    <th>Fibres</th>
+                    <td>6,3 g</td>
+                </tr>
+                <tr>
+                    <th>Glucides</th>
+                    <td>25 g</td>
+                </tr>
+                <tr>
+                    <th>Fer</th>
+                    <td>5,1 mg</td>
+                </tr>
+                <tr>
+                    <th>Magnésium</th>
+                    <td>63 mg</td>
+                </tr>
+            </table>
+        </div>
+        
+
+        <div class="nutrition-card">
+            <h2>Manioc</h2>
+            <img src="/Le Saveur Cubain/imagenes/imageNutrition/manioc.jpg" alt="Manioc">
+            <p>Le manioc, également connu sous le nom de cassava, est une racine riche en glucides complexes, idéale pour fournir une énergie durable. Il est une bonne source de vitamines et de minéraux, notamment la vitamine C, qui renforce le système immunitaire et aide à l'absorption du fer. Le manioc contient également des fibres alimentaires, qui aident à la digestion, et est naturellement sans gluten, ce qui en fait un choix sûr pour les personnes ayant des sensibilités au gluten.</p>
+            <h3>Bienfaits pour la santé :</h3>
+            <ul>
+                <li>Riche en glucides complexes, source d'énergie durable</li>
+                <li>Contient de la vitamine C, aide à renforcer le système immunitaire</li>
+                <li>Bonne source de fibres, favorise la digestion</li>
+                <li>Sans gluten, idéal pour les personnes intolérantes</li>
+                <li>Aide à l'absorption du fer grâce à la vitamine C</li>
+            </ul>
+            <h3>Valeur Nutritionnelle (100g) :</h3>
+            <table>
+                <tr>
+                    <th>Calories</th>
+                    <td>160 kcal</td>
+                </tr>
+                <tr>
+                    <th>Protéines</th>
+                    <td>1,4 g</td>
+                </tr>
+                <tr>
+                    <th>Fibres</th>
+                    <td>1,8 g</td>
+                </tr>
+                <tr>
+                    <th>Glucides</th>
+                    <td>38 g</td>
+                </tr>
+                <tr>
+                    <th>Vitamine C</th>
+                    <td>20,6 mg</td>
+                </tr>
+                <tr>
+                    <th>Calcium</th>
+                    <td>16 mg</td>
+                </tr>
+            </table>
+        </div>
+
+        
+        <div class="nutrition-card">
+            <h2>Laurier</h2>
+            <img src="/Le Saveur Cubain/imagenes/imageNutrition/laurelle.webp" alt="Laurier">
+            <p>Le laurier est une plante aromatique utilisée principalement pour parfumer les plats. En plus de ses qualités gustatives, il possède des propriétés médicinales intéressantes. Riche en antioxydants et en composés phytochimiques, le laurier aide à réduire l'inflammation et soutient la digestion. Il est également une bonne source de vitamine A, importante pour la santé des yeux, et de vitamine C, qui renforce l'immunité. Le laurier est souvent utilisé pour soulager les problèmes digestifs et favoriser une bonne santé respiratoire.</p>
+            <h3>Bienfaits pour la santé :</h3>
+            <ul>
+                <li>Riche en antioxydants, aide à réduire l'inflammation</li>
+                <li>Contient des composés phytochimiques bénéfiques</li>
+                <li>Source de vitamine A, bonne pour la vision</li>
+                <li>Aide à la digestion, souvent utilisé pour apaiser les troubles digestifs</li>
+                <li>Soutient la santé respiratoire</li>
+            </ul>
+            <h3>Valeur Nutritionnelle (100g) :</h3>
+            <table>
+                <tr>
+                    <th>Calories</th>
+                    <td>313 kcal</td>
+                </tr>
+                <tr>
+                    <th>Protéines</th>
+                    <td>7,6 g</td>
+                </tr>
+                <tr>
+                    <th>Fibres</th>
+                    <td>26 g</td>
+                </tr>
+                <tr>
+                    <th>Vitamine A</th>
+                    <td>6185 IU</td>
+                </tr>
+                <tr>
+                    <th>Vitamine C</th>
+                    <td>46,5 mg</td>
+                </tr>
+                <tr>
+                    <th>Fer</th>
+                    <td>43 mg</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="nutrition-card">
+            <h2>Banane Plantain</h2>
+            <img src="/Le Saveur Cubain/imagenes/imageNutrition/platano.webp" alt="Banane Plantain">
+            <p>La banane plantain est une excellente source de glucides complexes, idéale pour fournir une énergie durable. Riche en fibres alimentaires, elle aide à réguler la digestion et favorise une sensation de satiété. La plantain est également une bonne source de vitamines A et C, essentielles pour la santé des yeux et du système immunitaire. De plus, elle contient du potassium, qui joue un rôle important dans la régulation de la pression artérielle et la santé cardiaque.</p>
+            <h3>Bienfaits pour la santé :</h3>
+            <ul>
+                <li>Riche en glucides complexes, fournit une énergie prolongée</li>
+                <li>Bonne source de fibres alimentaires, aide à la digestion</li>
+                <li>Contient des vitamines A et C, bénéfique pour les yeux et l'immunité</li>
+                <li>Source de potassium, favorable à la santé cardiaque et à la régulation de la pression artérielle</li>
+            </ul>
+            <h3>Valeur Nutritionnelle (100g) :</h3>
+            <table>
+                <tr>
+                    <th>Calories</th>
+                    <td>122 kcal</td>
+                </tr>
+                <tr>
+                    <th>Protéines</th>
+                    <td>1,3 g</td>
+                </tr>
+                <tr>
+                    <th>Fibres</th>
+                    <td>2,3 g</td>
+                </tr>
+                <tr>
+                    <th>Glucides</th>
+                    <td>31 g</td>
+                </tr>
+                <tr>
+                    <th>Potassium</th>
+                    <td>499 mg</td>
+                </tr>
+                <tr>
+                    <th>Vitamine A</th>
+                    <td>1127 IU</td>
+                </tr>
+                <tr>
+                    <th>Vitamine C</th>
+                    <td>18,4 mg</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="nutrition-card">
+            <h2>Tomate</h2>
+            <img src="/Le Saveur Cubain/imagenes/imageNutrition/tomate21.jpg" alt="Tomate">
+            <p>La tomate est un fruit riche en antioxydants, notamment le lycopène, qui est réputé pour ses propriétés anti-inflammatoires et anticancéreuses. Elle est également une excellente source de vitamine C et de potassium, contribuant ainsi à la santé du cœur et au renforcement du système immunitaire. Les tomates sont faibles en calories mais riches en nutriments essentiels comme les vitamines A et K, ainsi que les fibres alimentaires qui favorisent la digestion.</p>
+            <h3>Bienfaits pour la santé :</h3>
+            <ul>
+                <li>Riche en lycopène, aide à protéger contre les maladies chroniques</li>
+                <li>Source de vitamine C, renforce le système immunitaire</li>
+                <li>Faible en calories, mais riche en vitamines et minéraux essentiels</li>
+                <li>Bonne source de fibres, favorise une digestion saine</li>
+                <li>Contribue à la santé cardiaque grâce au potassium</li>
+            </ul>
+            <h3>Valeur Nutritionnelle (100g) :</h3>
+            <table>
+                <tr>
+                    <th>Calories</th>
+                    <td>18 kcal</td>
+                </tr>
+                <tr>
+                    <th>Protéines</th>
+                    <td>0,9 g</td>
+                </tr>
+                <tr>
+                    <th>Fibres</th>
+                    <td>1,2 g</td>
+                </tr>
+                <tr>
+                    <th>Glucides</th>
+                    <td>3,9 g</td>
+                </tr>
+                <tr>
+                    <th>Vitamine C</th>
+                    <td>13,7 mg</td>
+                </tr>
+                <tr>
+                    <th>Lycopène</th>
+                    <td>2,5 à 9 mg</td>
+                </tr>
+            </table>
+        </div>
+
+        
+        <div class="nutrition-card">
+            <h2>Olives</h2>
+            <img src="/Le Saveur Cubain/imagenes/imageNutrition/olives.webp" alt="Olives">
+            <p>Les olives sont riches en graisses mono-insaturées, bénéfiques pour la santé cardiaque. Elles contiennent également des antioxydants puissants, comme les polyphénols, qui aident à réduire l'inflammation et à protéger les cellules contre les dommages oxydatifs. En plus de leur teneur en graisses saines, les olives fournissent des vitamines E et A, qui sont excellentes pour la santé de la peau et des yeux. Les olives sont aussi une bonne source de fer, contribuant à la production de globules rouges.</p>
+            <h3>Bienfaits pour la santé :</h3>
+            <ul>
+                <li>Riche en graisses mono-insaturées, bénéfique pour le cœur</li>
+                <li>Contient des antioxydants, réduit l'inflammation et protège les cellules</li>
+                <li>Source de vitamine E, bonne pour la peau et les cheveux</li>
+                <li>Bonne source de fer, contribue à la santé du sang</li>
+                <li>Aide à la santé des yeux grâce à la vitamine A</li>
+            </ul>
+            <h3>Valeur Nutritionnelle (100g) :</h3>
+            <table>
+                <tr>
+                    <th>Calories</th>
+                    <td>115 kcal</td>
+                </tr>
+                <tr>
+                    <th>Protéines</th>
+                    <td>0,8 g</td>
+                </tr>
+                <tr>
+                    <th>Fibres</th>
+                    <td>3,2 g</td>
+                </tr>
+                <tr>
+                    <th>Graisses mono-insaturées</th>
+                    <td>11 g</td>
+                </tr>
+                <tr>
+                    <th>Vitamine E</th>
+                    <td>3,81 mg</td>
+                </tr>
+                <tr>
+                    <th>Fer</th>
+                    <td>3,3 mg</td>
+                </tr>
+            </table>
+        </div>
+
+        
+        <div class="nutrition-card">
+            <h2>Poivron</h2>
+            <img src="/Le Saveur Cubain/imagenes/imageNutrition/pimiento.jpg" alt="Poivron">
+            <p>Le poivron est riche en vitamine C, en fait, il en contient plus que les agrumes, ce qui le rend excellent pour renforcer le système immunitaire. Il est également une source importante de vitamines A et E, qui sont bénéfiques pour la santé des yeux et de la peau. En plus de ses vitamines, le poivron contient des antioxydants comme le bêta-carotène et les flavonoïdes, qui aident à protéger contre les maladies chroniques. Faible en calories, il est parfait pour les régimes alimentaires sains tout en apportant une bonne quantité de fibres alimentaires.</p>
+            <h3>Bienfaits pour la santé :</h3>
+            <ul>
+                <li>Riche en vitamine C, renforce le système immunitaire</li>
+                <li>Bonne source de vitamines A et E, bénéfique pour la santé des yeux et de la peau</li>
+                <li>Contient des antioxydants, aide à protéger contre les maladies chroniques</li>
+                <li>Faible en calories, parfait pour les régimes alimentaires équilibrés</li>
+                <li>Source de fibres, favorise la digestion</li>
+            </ul>
+            <h3>Valeur Nutritionnelle (100g) :</h3>
+            <table>
+                <tr>
+                    <th>Calories</th>
+                    <td>31 kcal</td>
+                </tr>
+                <tr>
+                    <th>Protéines</th>
+                    <td>1 g</td>
+                </tr>
+                <tr>
+                    <th>Fibres</th>
+                    <td>1,9 g</td>
+                </tr>
+                <tr>
+                    <th>Glucides</th>
+                    <td>6 g</td>
+                </tr>
+                <tr>
+                    <th>Vitamine C</th>
+                    <td>127,7 mg</td>
+                </tr>
+                <tr>
+                    <th>Vitamine A</th>
+                    <td>3131 IU</td>
+                </tr>
+                <tr>
+                    <th>Bêta-carotène</th>
+                    <td>162 µg</td>
+                </tr>
+            </table>
+        </div>
+        
+        
+        <div class="nutrition-card">
+            <h2>Malanga (Taro)</h2>
+            <img src="/Le Saveur Cubain/imagenes/imageNutrition/malanga.jpg" alt="Malanga (Taro)">
+            <p>La malanga, également appelée taro, est une racine tropicale riche en nutriments. Elle est une bonne source de glucides complexes, idéale pour un apport énergétique soutenu. Riche en fibres alimentaires, elle facilite la digestion et contribue à la santé intestinale. Elle contient également des vitamines B et C, ainsi que des minéraux comme le potassium et le manganèse, essentiels pour la fonction cardiaque et le métabolisme.</p>
+            <h3>Bienfaits pour la santé :</h3>
+            <ul>
+                <li>Riche en glucides complexes, fournit une énergie durable</li>
+                <li>Bonne source de fibres, favorise la digestion et la santé intestinale</li>
+                <li>Contient des vitamines B et C, soutient l’immunité et la santé cellulaire</li>
+                <li>Source de potassium, contribue à la santé cardiaque</li>
+                <li>Contient du manganèse, soutient le métabolisme</li>
+            </ul>
+            <h3>Valeur Nutritionnelle (100g) :</h3>
+            <table>
+                <tr>
+                    <th>Calories</th>
+                    <td>142 kcal</td>
+                </tr>
+                <tr>
+                    <th>Protéines</th>
+                    <td>2 g</td>
+                </tr>
+                <tr>
+                    <th>Fibres</th>
+                    <td>5 g</td>
+                </tr>
+                <tr>
+                    <th>Glucides</th>
+                    <td>34 g</td>
+                </tr>
+                <tr>
+                    <th>Potassium</th>
+                    <td>591 mg</td>
+                </tr>
+                <tr>
+                    <th>Vitamine C</th>
+                    <td>5 mg</td>
+                </tr>
+                <tr>
+                    <th>Manganèse</th>
+                    <td>0.4 mg</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="nutrition-card">
+            <h2>Haricots Rouges</h2>
+            <img src="/Le Saveur Cubain/imagenes/imageNutrition/haricotsRouge.jpg" alt="Haricots Rouges">
+            <p>Les haricots rouges sont une légumineuse polyvalente, riche en protéines végétales et en fibres, idéale pour une alimentation équilibrée. Avec leurs différents types, tels que le haricot rouge foncé, le haricot rouge clair, et d'autres variétés, ils sont une source d'antioxydants et de minéraux comme le fer et le magnésium. Ces nutriments aident à renforcer le système immunitaire, la santé cardiaque et la régulation du métabolisme.</p>
+            <h3>Bienfaits pour la santé :</h3>
+            <ul>
+                <li>Riche en fibres, soutient la digestion et la régulation de la glycémie</li>
+                <li>Source de protéines végétales, parfait pour les régimes sans viande</li>
+                <li>Contient des antioxydants, protège les cellules contre les dommages</li>
+                <li>Source de fer, soutient la production de globules rouges</li>
+                <li>Contient du magnésium, bénéfique pour le métabolisme et la fonction musculaire</li>
+            </ul>
+            <h3>Valeur Nutritionnelle (100g) :</h3>
+            <table>
+                <tr>
+                    <th>Calories</th>
+                    <td>127 kcal</td>
+                </tr>
+                <tr>
+                    <th>Protéines</th>
+                    <td>8.7 g</td>
+                </tr>
+                <tr>
+                    <th>Fibres</th>
+                    <td>6.4 g</td>
+                </tr>
+                <tr>
+                    <th>Glucides</th>
+                    <td>22 g</td>
+                </tr>
+                <tr>
+                    <th>Fer</th>
+                    <td>2.1 mg</td>
+                </tr>
+                <tr>
+                    <th>Magnésium</th>
+                    <td>40 mg</td>
+                </tr>
+                <tr>
+                    <th>Antioxydants (polyphénols)</th>
+                    <td>Présents en quantités variables selon la variété</td>
+                </tr>
+            </table>
+        </div>
+        
+        
+        <div class="nutrition-card">
+            <h2>Pois Chiches</h2>
+            <img src="/Le Saveur Cubain/imagenes/imageNutrition/garbanzos-1.jpg" alt="Pois Chiches">
+            <p>Les pois chiches, ou garbanzos, sont une légumineuse riche en protéines végétales, en fibres et en divers minéraux essentiels. Ils sont une excellente source de fer, de magnésium et de folates, ce qui en fait un aliment idéal pour soutenir la santé cellulaire, le système immunitaire et l'énergie. Les pois chiches aident à réguler la glycémie, réduisent le cholestérol et favorisent la satiété.</p>
+            <h3>Bienfaits pour la santé :</h3>
+            <ul>
+                <li>Source élevée de fibres alimentaires, favorise la digestion et la satiété</li>
+                <li>Riche en protéines végétales, parfait pour une alimentation équilibrée</li>
+                <li>Source de fer, soutient l'oxygénation et la production de globules rouges</li>
+                <li>Contient du magnésium, bénéfique pour le métabolisme et le cœur</li>
+                <li>Riche en folates, essentiels pour la santé cellulaire et la prévention des anomalies congénitales</li>
+            </ul>
+            <h3>Valeur Nutritionnelle (100g) :</h3>
+            <table>
+                <tr>
+                    <th>Calories</th>
+                    <td>164 kcal</td>
+                </tr>
+                <tr>
+                    <th>Protéines</th>
+                    <td>8.9 g</td>
+                </tr>
+                <tr>
+                    <th>Fibres</th>
+                    <td>7.6 g</td>
+                </tr>
+                <tr>
+                    <th>Glucides</th>
+                    <td>27 g</td>
+                </tr>
+                <tr>
+                    <th>Fer</th>
+                    <td>2.9 mg</td>
+                </tr>
+                <tr>
+                    <th>Magnésium</th>
+                    <td>48 mg</td>
+                </tr>
+                <tr>
+                    <th>Folates</th>
+                    <td>172 µg</td>
+                </tr>
+            </table>
+        </div>
+        
+
+        <div class="nutrition-card">
+            <h2>Pomme de Terre</h2>
+            <img src="/Le Saveur Cubain/imagenes/imageNutrition/pomme de terre.jpg" alt="Pomme de Terre">
+            <p>La pomme de terre est un aliment de base riche en glucides complexes, qui fournit une source d'énergie durable. Elle contient également des vitamines essentielles, notamment la vitamine C et la vitamine B6, ainsi que des minéraux tels que le potassium, important pour la santé cardiaque et le bon fonctionnement musculaire. Avec sa haute teneur en fibres lorsqu'elle est consommée avec la peau, la pomme de terre favorise une digestion saine.</p>
+            <h3>Bienfaits pour la santé :</h3>
+            <ul>
+                <li>Excellente source de glucides complexes, pour une énergie soutenue</li>
+                <li>Riche en vitamine C, soutient le système immunitaire et la santé de la peau</li>
+                <li>Source de potassium, bénéfique pour la pression artérielle et la fonction musculaire</li>
+                <li>Contient des fibres alimentaires (surtout dans la peau), favorise une bonne digestion</li>
+                <li>Contient de la vitamine B6, essentielle pour le métabolisme des protéines</li>
+            </ul>
+            <h3>Valeur Nutritionnelle (100g) :</h3>
+            <table>
+                <tr>
+                    <th>Calories</th>
+                    <td>77 kcal</td>
+                </tr>
+                <tr>
+                    <th>Protéines</th>
+                    <td>2 g</td>
+                </tr>
+                <tr>
+                    <th>Fibres</th>
+                    <td>2.2 g</td>
+                </tr>
+                <tr>
+                    <th>Glucides</th>
+                    <td>17 g</td>
+                </tr>
+                <tr>
+                    <th>Potassium</th>
+                    <td>425 mg</td>
+                </tr>
+                <tr>
+                    <th>Vitamine C</th>
+                    <td>19.7 mg</td>
+                </tr>
+                <tr>
+                    <th>Vitamine B6</th>
+                    <td>0.3 mg</td>
+                </tr>
+            </table>
+        </div>
+        
+
+        <div class="nutrition-card">
+            <h2>Persil</h2>
+            <img src="/Le Saveur Cubain/imagenes/imageNutrition/i102130-persil-nu.webp" alt="Persil">
+            <p>Le persil est une herbe aromatique riche en nutriments essentiels tels que la vitamine C, la vitamine K et la vitamine A, ainsi qu'en antioxydants puissants comme les flavonoïdes. Il soutient le système immunitaire, améliore la santé des os et aide à réduire l'inflammation dans le corps. De plus, le persil est connu pour ses propriétés détoxifiantes et ses effets bénéfiques sur la digestion.</p>
+            <h3>Bienfaits pour la santé :</h3>
+            <ul>
+                <li>Riche en vitamine C, renforce le système immunitaire</li>
+                <li>Excellente source de vitamine K, essentielle pour la santé des os</li>
+                <li>Contient de la vitamine A, importante pour la vision et la peau</li>
+                <li>Possède des antioxydants (flavonoïdes) qui réduisent l'inflammation</li>
+                <li>Propriétés détoxifiantes, soutient le foie et la digestion</li>
+            </ul>
+            <h3>Valeur Nutritionnelle (100g) :</h3>
+            <table>
+                <tr>
+                    <th>Calories</th>
+                    <td>36 kcal</td>
+                </tr>
+                <tr>
+                    <th>Protéines</th>
+                    <td>3 g</td>
+                </tr>
+                <tr>
+                    <th>Fibres</th>
+                    <td>3.3 g</td>
+                </tr>
+                <tr>
+                    <th>Glucides</th>
+                    <td>6 g</td>
+                </tr>
+                <tr>
+                    <th>Vitamine C</th>
+                    <td>133 mg</td>
+                </tr>
+                <tr>
+                    <th>Vitamine K</th>
+                    <td>1640 µg</td>
+                </tr>
+                <tr>
+                    <th>Vitamine A</th>
+                    <td>8424 IU</td>
+                </tr>
+            </table>
+        </div>
+        
+
+
+    </section>
+
 </body>
 </html>

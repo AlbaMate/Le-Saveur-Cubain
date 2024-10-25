@@ -25,31 +25,39 @@ header {
     z-index: 10px;
 }
 
-.search-bar {
-    width: 100%;
-    max-width: 250px;
-    
-  }
-  
-  .search-form {
+
+
+/* Style pour le formulaire centré */
+form {
     display: flex;
-    width: 80%;
-  }
-  
-  .search-input {
+    justify-content: center; /* Centre la barre de recherche */
+    align-items: center; /* Centre verticalement si nécessaire */
+    margin: 30px 0; /* Augmente la marge pour donner plus d'espace autour du formulaire */
+}
+
+.search-form {
+    display: flex;
+    width: 100%; /* Prend la totalité de l'espace parent */
+    max-width: 600px; /* Limite la taille totale du formulaire */
+    padding: 10px; /* Ajoute de l'espace autour de la barre de recherche */
+}
+
+.search-input {
     flex: 1;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    padding: 15px 20px; /* Ajuste le padding pour donner un aspect spacieux mais pas trop grand */
+    font-size: 18px; /* Augmente légèrement la taille de la police pour plus de confort visuel */
+    border: 1px solid #ccc; /* Bordure légère */
+    border-radius: 10px; /* Coins arrondis */
     cursor: pointer;
-    transition: border-color 0.3s ease;
-  }
-  
-  .search-input:focus {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Ajoute une transition fluide */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Légère ombre pour donner du relief */
+}
+
+.search-input:focus {
     outline: none;
-    border-color: #007bff;
-  };
+    border-color: #007bff; /* Couleur de bordure sur le focus */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Ajoute une ombre bleue lors du focus */
+}
 
 .logo {
     color: rgb(242, 79, 10);

@@ -23,12 +23,26 @@
                     <li><a href="./menu/Apropos.html">À propos</a></li>
                 </ul>
                 <div class="search-bar">
-                    <form class="search-form" action="#" method="GET">
+                    <!-- <form class="search-form" action="#" method="GET">
                         <input class="search-input" type="search" placeholder="Trouver la recette que vous fait envie " aria-label="Search">
+                    </form> -->
+                    <form action="/search" method="GET">
+                         <input type="text" name="q" placeholder="Rechercher un cocktail..." /> 
+                        
+                        <!-- <input type="text" name="ingredient" placeholder="Ingrédient..." /> -->
+                        
+                        <!-- <select name="alcoholic">
+                            <option value="">Tous</option>
+                            <option value="true">Alcoolisé</option>
+                            <option value="false">Non Alcoolisé</option>
+                        </select> -->
+                    
+                        <!-- <button type="submit">Rechercher</button> -->
                     </form>
                 </div>
             </nav>
         </header>
+        <div id="results"></div>
 
         <h1>Le meilleur des recettes traditionnelles issues de la cuisine cubaine</h1> 
         <br>
@@ -48,5 +62,7 @@
     <div class="footer">
         <p>M@yt£.  Tradition Cubaine (❁´◡`❁)  All rights reserved.</p>
     </div>
+
+    <script src="search.js" defer></script>
 </body>
 </html>
