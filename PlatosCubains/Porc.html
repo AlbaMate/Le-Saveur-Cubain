@@ -1,12 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porc</title>
+    <title>Recettes de Porc</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 38px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        /* Container for aligning images to the left */
+        .image-column {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align images to the left */
+            gap: 25px; /* Space between images */
+        }
+
+        /* Uniform image styling */
+        .image-column img {
+            width: 500px; /* Fixed width for uniform size */
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
-    <h4>HELLO</h4>
-    <img src="imagenes\camarones-al-ajillo-2954-1.jpg" alt="Poulet" id="monImage">
+    <h1>Mes recettes de Porc</h1>
+    <div class="image-column">
+        <img src="/Le Saveur Cubain/imagenes/Escalope de cerdo.jpg" alt="Escalope de Porc">
+        <img src="/Le Saveur Cubain/imagenes/BistecCerdoEncebollado_LateralAt_alamesacuba.com.jpeg" alt="Bistec de Porc Encebollado">
+        <img src="/Le Saveur Cubain/imagenes/BistecCerdoSantiaguera_alamesacuba.com.jpeg" alt="Bistec de Porc à la Santiaguera">
+        <img src="/Le Saveur Cubain/imagenes/fricasé de porc.jpg" alt="Fricassée de Porc">
+        <img src="/Le Saveur Cubain/imagenes/masas-de-cerdo-fritas.jpg" alt="masa de cerdo">
+    </div>
 </body>
 </html>

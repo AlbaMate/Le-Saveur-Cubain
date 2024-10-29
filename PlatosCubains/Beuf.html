@@ -3,13 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beuf</title>
+    <title>Boeuf</title>
     <style>
-        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .image-box {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .image-box img {
+            width: 45%;
+            max-height: 300px;
+            object-fit: cover;
+            border: 3px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Alternance gauche-droite */
+        .left {
+            justify-content: flex-start;
+        }
+
+        .right {
+            justify-content: flex-end;
+        }
+
     </style>
 </head>
 <body>
-   <h4>HELLO</h4>
+    <h1>Mes recettes de Boeuf</h1>
+
+    <div class="container">
+        <div class="image-box left">
+            <img src="/Le Saveur Cubain/imagenes/bistec-montetoro encebollado.jpg" alt="Viande de boeuf">
+        </div>
+        <div class="image-box right">
+            <img src="/Le Saveur Cubain/imagenes/Bistec de res à la cazuela.jpg" alt="Viande de boeuf">
+        </div>
+        <div class="image-box left">
+            <img src="/Le Saveur Cubain/imagenes/Cuban-Ropa-Vieja-S2.jpg" alt="Viande de boeuf">
+        </div>
+        <div class="image-box right">
+            <img src="/Le Saveur Cubain/imagenes/bistec-montetoro encebollado.jpg" alt="Viande de boeuf">
+        </div>
+        <div class="image-box left">
+            <img src="/Le Saveur Cubain/imagenes/ternera de res guisada.jpg" alt="Viande de boeuf">
+        </div>
+    </div>
 
 </body>
 </html>
